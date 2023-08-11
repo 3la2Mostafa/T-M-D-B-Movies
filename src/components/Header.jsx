@@ -1,14 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useLanguage, useLanguageDispatch } from '../context/LanguageContext'
 
 const Header = () => {
-
-  const handleSubmit = (e) => {
-    e.preventDefault() // Prevent the default form submission behavior
-    const searchValue = e.target.elements.search.value
-    console.log('Search value:', searchValue)
-  }
 
   return (
     <>
