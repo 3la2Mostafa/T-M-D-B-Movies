@@ -1,33 +1,30 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { addToFavorites, deleteFromFavorites } from '../redux/actions/favAction'
-import { useToasts } from 'react-toast-notifications';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Movie({ movie }) {
   const dispatch = useDispatch()
-  const { addToast } = useToasts();
-
 
   const handleAddToFavorites = (movie) => {
     console.log('Received movie:', movie)
     dispatch(addToFavorites(movie))
-    addToast(`${movie.title} added to favorites`, {
-      appearance: 'success',
-      autoDismiss: true,
-    });
+    toast.success(<div><b>{movie.title}</b> Added to Favorites</div>);
+
   }
 
   const handleDeleteFromFavorites = (movie) => {
     dispatch(deleteFromFavorites(movie))
-    addToast(`${movie.title} removed from favorites`, {
-      appearance: 'warning',
-      autoDismiss: true,
-    });
+    toast.error(<div><b>{movie.title}</b> Removed from Favorite</div>);
   }
 
   return (
+    <>
     <div className="col-md-3 mb-4" style={{ width: '250px' }} key={movie.id}>
       <div className="card" style={{ border: '1px solid gray', boxShadow: '0px 0px 5px rgba(0, 0, 0, 1)' }}>
+      <ToastContainer />
         <div style={{ position: 'relative' }}>
           <img
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -81,5 +78,6 @@ export default function Movie({ movie }) {
           </div>
       </div>
     </div>
+    </>
   )
 }
