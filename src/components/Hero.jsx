@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import Modal from './Modal';
-
+import '../style/HeroStyle.css'
 
 
 const Hero = ()=>{
@@ -46,14 +46,14 @@ const Hero = ()=>{
           <img
               src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?cs=srgb&dl=pexels-nathan-engel-436413.jpg&fm=jpg&h=350&w=1600&fit=crop&_gl=1*1sqq3v5*_ga*MTg4ODI0MzA3NS4xNjkxNTUyNTYy*_ga_8JE65Q40S6*MTY5MTg4NDM4Mi4yLjEuMTY5MTg4NDM4NS4wLjAuMA.."
               alt="Background"
-              className="w-100"
+              className="w-100 logo"
               style={{ maxHeight: '300px', objectFit: 'cover' ,filter:'brightness(0.4)',height:'350px',borderRadius:'0px 0px 10px 10px'}}
           />
 
           {/* Text on Image */}
-          <div className="w-100 position-absolute top-50 start-50 translate-middle p-5">
-              <h1 className="text-white px-5" style={{fontFamily:'cursive'}}>Welcome.</h1>
-              <h3 className="text-white px-5" style={{fontFamily:'cursive'}}>Millions of movies, TV shows and people to discover. Explore now.</h3>
+          <div className="w-100 position-absolute top-50 start-50 translate-middle p-5 heroTextContainer">
+              <h1 className="text-white px-5 heroText" style={{fontFamily:'cursive'}}>Welcome.</h1>
+              <h3 className="text-white px-5 heroText" style={{fontFamily:'cursive'}}>Millions of movies, TV shows and people to discover. Explore now.</h3>
           </div>
 
           {/* Search Bar */}
@@ -95,7 +95,7 @@ const Hero = ()=>{
                 </button>
               </div>
               <div className="modal-body">
-              <div className='row m-5'>
+              <div className='row m-5 '>
   {filteredMovies.map((movie) => (
     <div className="col-md-4 mb-4 d-flex justify-content-center" key={movie.id}>
       <div className="card" style={{ border: '1px solid gray', boxShadow: '0px 0px 5px rgba(0, 0, 0, 1)' }}>

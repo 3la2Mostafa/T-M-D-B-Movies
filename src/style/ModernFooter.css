@@ -1,0 +1,26 @@
+/* For screens with a maximum width of 768px (mobile screens) */
+@media (max-width: 768px) {
+.centeredFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    }
+
+  .centeredFooter img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 140px; 
+    padding: 0px;
+  }
+
+  .centeredFooter .footer-text {
+    font-size: 12px;
+    margin-top: 10px; /* Adjust the spacing between the image and text */
+  }
+}

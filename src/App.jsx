@@ -7,6 +7,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Modal from './components/Modal'
 import React from 'react'
+import './style/App.css'
 
 function App() {
   return (

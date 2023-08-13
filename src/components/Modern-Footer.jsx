@@ -1,4 +1,4 @@
-
+import '../style/ModernFooter.css'
 const Footer = ()=>{
     const linkStyle = {
         textDecoration: 'none',
@@ -8,11 +8,16 @@ const Footer = ()=>{
     return(
         <>
         <footer className="  text-white" style={{backgroundColor:'#191970'}}>
-            <div className="row pt-3 pr-4">
-                <div className=" col-3 d-flex align-items-center justify-content-end " >
-                    <img className=" rounded-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvLUkcr5LtvbxYNVqeFTX50uU782Z7EnFg479G-rPTkc7_BqHCw71stmddN6tvFuVhMYo&usqp=CAU" style={{height:'140px'}} alt="logoFooter" />
+            <div className="row pt-3 pr-4 centeredFooter">
+                <div className=" col-4 d-flex align-items-center justify-content-center" >
+                    <img 
+                    className=" rounded-5"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvLUkcr5LtvbxYNVqeFTX50uU782Z7EnFg479G-rPTkc7_BqHCw71stmddN6tvFuVhMYo&usqp=CAU"
+                    style={{height:'140px'}}
+                    alt="logoFooter" 
+                    />
                 </div>
-                <div className="col-9 pt-4" >
+                <div className="col-8 pt-4  footer-text" >
                     <section className="">
                         <div className="row">
                             <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -87,6 +92,10 @@ const Footer = ()=>{
                     </section>
                 </div>
             </div>
+           
+           
+           
+           
             <div className="container p-4 pb-0 text-center" >
                 <section className="mb-4">
                 <a className="btn text-white btn-floating m-1" style={{backgroundColor: '#3b5998',borderRadius:'49%'}} href="#!" role="button"><i className="fab fa-facebook-f" /></a>

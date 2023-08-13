@@ -1,0 +1,16 @@
+/* Regular logo style for desktop */
+/* .text-white {
+  font-size: 35px;
+} */
+
+/* Mobile logo style for screens with a max width of 768px */
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 15px;
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+  }
+
+}
