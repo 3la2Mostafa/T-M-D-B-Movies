@@ -10,7 +10,7 @@ const Footer = ()=>{
         <footer className="  text-white" style={{backgroundColor:'#191970'}}>
             <div className="row pt-3 pr-4">
                 <div className=" col-3 d-flex align-items-center justify-content-end " >
-                    <img className=" rounded-5" src="../../public/assets/images/MTDBLogo.jpg" alt="" />
+                    <img className=" rounded-5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvLUkcr5LtvbxYNVqeFTX50uU782Z7EnFg479G-rPTkc7_BqHCw71stmddN6tvFuVhMYo&usqp=CAU" style={{height:'140px'}} alt="logoFooter" />
                 </div>
                 <div className="col-9 pt-4" >
                     <section className="">

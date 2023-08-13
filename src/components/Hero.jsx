@@ -44,7 +44,7 @@ const Hero = ()=>{
         <>
         <div className="position-relative" >
           <img
-              src="../../public/assets/images/panaer.jpg"
+              src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?cs=srgb&dl=pexels-nathan-engel-436413.jpg&fm=jpg&h=350&w=1600&fit=crop&_gl=1*1sqq3v5*_ga*MTg4ODI0MzA3NS4xNjkxNTUyNTYy*_ga_8JE65Q40S6*MTY5MTg4NDM4Mi4yLjEuMTY5MTg4NDM4NS4wLjAuMA.."
               alt="Background"
               className="w-100"
               style={{ maxHeight: '300px', objectFit: 'cover' ,filter:'brightness(0.4)',height:'350px',borderRadius:'0px 0px 10px 10px'}}

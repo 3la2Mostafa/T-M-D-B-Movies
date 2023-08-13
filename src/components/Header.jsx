@@ -24,7 +24,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <img src="../../public/assets/images/navLogo.png" alt="Logo" style={{ maxWidth: '100px', height: 'auto' }} />
+        <img src="https://o.remove.bg/downloads/4f26f96e-082e-40ef-8dba-9517682b0484/navLogo-removebg-preview.png" alt="Logo" style={{ maxWidth: '100px', height: 'auto' }} />
 
       </nav>
     </>
