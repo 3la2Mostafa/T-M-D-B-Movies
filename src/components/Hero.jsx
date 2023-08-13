@@ -2,7 +2,8 @@ import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import Modal from './Modal';
 import '../style/HeroStyle.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Hero = ()=>{
   const movies = useSelector((state) => state.movies);
@@ -15,13 +16,18 @@ const Hero = ()=>{
   };
 
   const handleSearchSubmit = () => {
-    const filteredMovies = movies.filter((movie) =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredMovies(filteredMovies); 
+    if (searchTerm.trim() === '') {
+      setIsModalOpen(false);
+      toast.error('Please enter a search term');
+    } else {
+      const filteredMovies = movies.filter((movie) =>
+        movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredMovies(filteredMovies);
+    }
     setIsModalOpen(true);
-    console.log(filteredMovies);
   };
+  
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -138,7 +144,9 @@ const Hero = ()=>{
         </div>
       </div>
     </div>
+    
   ))}
+  
 </div>
 
               </div>
@@ -148,6 +156,7 @@ const Hero = ()=>{
             </div>
           </div>
         </div>
+        <ToastContainer />
         </>
     )
 }
