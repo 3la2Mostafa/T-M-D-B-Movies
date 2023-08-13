@@ -29,7 +29,7 @@ export default function MovieDetails() {
       }
 
   const handelGoBack = () => {
-    navigate('/Home');
+    navigate('/');
   };
 
   return (
