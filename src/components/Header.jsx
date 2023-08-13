@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light px-4" style={{ backgroundColor: '#191970' }}>
       <a className="navbar-brand" href="/">
-        <img src="https://images.lingscars.com/images/movies/movies-word.png" alt="Logo" style={{ maxWidth: '100px', height: 'auto' }} />
+        <img src="https://images.lingscars.com/images/movies/movies-word.png" alt="Logooo" style={{ maxWidth: '100', height: '25px' }} />
       </a>
       <button
         className="navbar-toggler"
