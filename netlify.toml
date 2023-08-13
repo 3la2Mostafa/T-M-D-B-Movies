@@ -1,4 +1,1 @@
-[[redirects]]
-  from = "/*"
-  to = "/MovieDetails/:id"
-  Status = 200
+/* /index.html 200
